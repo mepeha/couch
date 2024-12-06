@@ -586,6 +586,7 @@ body {
     background-image: url(../src/images/bgimages/forcompany.webp);
     margin-bottom: 50px;
     transform: translateX(-68px);
+    z-index: -1;
 }
 
 .couching__forcompany .couching__title {
@@ -685,6 +686,7 @@ body {
 .provider__hr img {
     display: block;
     margin: auto;
+    z-index: 50;
 }
 
 .provider__roadmap {
@@ -1197,7 +1199,7 @@ body {
 }
 
 .provider__review:nth-child(2) {
-    background-image: url(/src/images/clients/client1.webp);
+    background-image: url(../src/images/clients/client1.webp);
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -1211,7 +1213,7 @@ body {
 .provider__review:nth-child(3) {
     position: relative;
     grid-column: 2;
-    background-image: url(/src/images/clients/client2.webp);
+    background-image: url(../src/images/clients/client2.webp);
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -1301,8 +1303,10 @@ body {
     font-weight: 300;
     line-height: -1px;
     letter-spacing: 0%;
-    display: inline-block;
-    margin-left: 723px;
+    display: block;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 38px;
 }
 
 .partners__list {
@@ -1313,8 +1317,11 @@ body {
 }
 
 .provider__mailing {
-    margin: 0 150px 0 250px;
+    margin: 57px 150px 0 8%;
+    padding-bottom: 90px;
+    position: relative;
 }
+
 .mailling__title {
     font-family: TT Livret Trial Roman Variable, sans-serif;
     font-size: 48px;
@@ -1323,15 +1330,258 @@ body {
     letter-spacing: 0%;
 }
 
+.mailling__form input[type="text"] {
+    margin: 5px 0;
+    padding-bottom: 5px;
+
+    border: 0;
+    border-bottom: 1px solid black; 
+    border-radius: 0; 
+
+    background: transparent !important;
+    outline: none; 
+    height: 50px; 
+    width: 328px; 
+    color: black; 
+    font-family: TT Livret Display Trl;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: -1px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.mailling__bgtitle {
+    position: absolute;
+    top: 18px;
+    left: -15px;
+    width: 347px;
+    min-height: 41px;
+    border-radius: 22px;
+    background: rgb(255, 152, 0);
+    z-index: -1;
+}
+
+.mailling__container {
+    display: flex;
+    position: relative;
+
+}
+
+.mailling__dots {
+    display: inline-flex;
+    justify-content: space-between;
+    width: 650px;
+    margin-top: 81px;
+    position: relative;
+}
+
+.mailling__dot {
+    font-family: TT Livret Display Trl;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 90%;
+    letter-spacing: 2%;
+}
+
+.mailling__dot::before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgb(255, 152, 0);
+    border-radius: 180px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -21px;
+}
+
+.mailling__arrow {
+    width: 52px;
+    height: 23px;
+    margin-top: 83px;
+    margin-left: 97px;
+}
+
+.mailling__form {
+    margin-top: 83px;
+    margin-left: 50px;
+    width: 327px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mailling__btn {
+    display: block;
+    margin-left: auto;
+    margin-top: 40px;
+}
+
+.mailling_manimg {
+    margin-left: auto;
+}
+
+.mailling__bgtext {
+    position: absolute;
+    top: 150px;
+    color: rgba(0, 0, 0, 0.09);
+    font-family: TT Livret Display Trl;
+    font-size: 82px;
+    font-weight: 500;
+    line-height: 72px;
+    letter-spacing: 0%;
+    z-index: -2;
+}
+
+.provider__useful {
+    margin: 60px 41px 0 41px;
+    display: flex;
+}
+
+.useful__gc {
+    width: 87px;
+    height: 91px;
+}
+
+.useful__arrow {
+    width: 111px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    margin: 0 26px 0 15px;
+}
+
+.useful__container {
+    margin: 0 0 136px 7%;
+    display: flex;
+    align-items: center;
+}
+
+.useful__text {
+    font-family: TT Norms Pro;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: -1px;
+    letter-spacing: 0%;
+}
+
+.useful__links {
+    margin: 0 75px;
+    display: flex;
+}
+
+.useful__link:nth-child(1) {
+    margin-left: 0 !important;
+}
+
+.useful__link {
+    box-sizing: border-box;
+    padding: 74px 30px 30px 30px;
+    background: rgb(224, 233, 239);
+    width: 206px;
+    height: 262px;
+    margin-left: 33px;
+    color: rgb(0, 0, 0);
+    font-family: TT Norms;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: -1px;
+    letter-spacing: 0%;
+}
+
 /* FOOTER */
 
 .footer {
     background-color: rgb(17, 17, 17);
     color: white;
-    padding: 75px;
+    padding: 153px 455px 75px 467px;
+    margin: 0 41px 0 41px;
     border-radius: 30px 30px 0 0;
+    position: relative;
+    left: 40px;
 }
 
+.footer__container {
+
+}
+
+.footer__title {
+    font-family: TT Livret Trial Roman Variable;
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 36px;
+    letter-spacing: 0%;
+    width: 426px;
+}
+
+.footer__logo {
+    margin-top: 58px;
+}
+
+.footer__contacts {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 87px;
+    padding: 41px 0 45px 0;
+    border-top: 2px solid rgb(255, 152, 0);
+    border-bottom: 2px solid rgb(255, 152, 0);
+
+    color: rgb(255, 255, 255);
+    font-family: TT Norms, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+
+.cotact__social img{
+    margin-left: 10px;
+    width: 26px;
+    height: 26px;
+    transform: translateY(25%)
+}
+
+.footer__subfooter {
+    margin-top: 310px;
+}
+
+.footer__subfooter {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyrigth {
+    width: 345px;
+    font-family: TT Livret Trial Roman Variable;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: -1px;
+    letter-spacing: 0%;
+}
+.footer__links {
+    display: flex;
+    flex-direction: column;
+    color: rgba(196, 197, 197, 0.4);
+    font-family: TT Norms;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0%;
+}
+
+.subfooter__bg {
+    position: absolute;
+    right: 218px;
+    bottom: 25px;
+}
+
+.footer__bg {
+    bottom: 0;
+    position: absolute;
+    left: 41px;
+}
 
 /* OTHER */
 
@@ -1341,4 +1591,9 @@ body {
 
 .ct_blue {
     color: rgb(50, 69, 237);
+}
+
+.bg__black {
+    background-color: black;
+    color: white
 }
