@@ -25,25 +25,78 @@
     font-style:normal;
 }
 
+@function rem($pixels) {
+	@return calc($pixels / 10) + rem;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
 body {
     font-family: TT Norms Pro, sans-serif;
     background-color: rgba(243, 243, 243, 0.6);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
+    position: relative;
 }
 
 .header {
     padding: 31px 13% 0 13%;
-    background-image: url("../src/images/bgimages/background.webp");
+    position: relative;
+    overflow: hidden;
+    height: 877px;
+}
+
+.header__bg {
+    background-color: rgba(243, 243, 243, 0.6);
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 1224px;
+    z-index: -1;
+}
+
+.header__bgimage {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../src/images/bgimages/background.webp);
     background-repeat: no-repeat;
     background-position: center center;
+    background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100vh;
+    z-index: -1;
 }
+
+.bg__planet {
+    margin-top: 221px;
+    text-align: center;
+}
+
+.bg__clo {
+    position: absolute;
+    top: 90px;
+    right: 0;
+    opacity: 0.8;
+    mix-blend-mode: overlay; 
+}
+
+.bg__rigtellipse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
 .header__container {
     display: flex;
     justify-content: space-between;
@@ -88,6 +141,7 @@ body {
     margin-right: 15px;
     display: flex;
     flex-direction: column;
+    font-weight: 300;
 }
 
 .header__black-button {
@@ -102,7 +156,6 @@ body {
     position: relative;
     min-height: 46px;
     max-height: 46px;
-
     font-size: 16px;
     font-weight: 300;
     font-family: TT Norms Pro, sans-serif;
@@ -146,25 +199,24 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
-    margin-top: 120px;
+    margin-top: 100px;
 }
 
 .header__landcontainer {
-    margin-top: 35px;
 }
 
 .header__landcontainer h1{
     font-size: 48px;
-    line-height: 120%;
+    line-height: 58px;
     font-weight: 380;
     font-family: TT Livret Trial Roman Variable, sans-serif;
+    margin: 0;
 }
 
 .header__landcontainer h2{
     font-family: TT Livret Display Trl, sans-serif;
     font-size: 82px;
-    font-weight: 380;
+    font-weight: 400;
     line-height: 90%;
     margin: 30px 0 0 0;
 }
@@ -223,7 +275,7 @@ body {
 .header__mouseicon {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 45px;
 }
 
 .header_content {
@@ -239,7 +291,7 @@ body {
 .header_bgprogram {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.15);
-    width: 62%;
+    width: 72%;
     height: 100px;
     top: 40px;
     right: 0;
@@ -250,7 +302,6 @@ body {
     list-style-type: none;
     font-family: TT Livret Display Trl, sans-serif;
     font-weight: 300;
-    font-size: 18px;
     line-height: 23px;
     width: 327px;
     z-index: 2;
@@ -287,7 +338,6 @@ body {
 .licenses__number{
     font-family: TT Livret Trial Roman Variable, sans-serif;
     font-weight: 300;
-    font-size: 18px;
     line-height: 23px;
 }
 
@@ -350,6 +400,21 @@ body {
 
 /* MAIN */
 
+.main {
+    position: relative;
+}
+
+.main__rigthline {
+    position: absolute;
+    top: 627px;
+    right: 258px;
+    
+    height: 1250px;
+    width: 2px;
+    background-color: rgb(255, 152, 0);
+    z-index: -1;
+}
+
 .main__provider {
     width: 100%;
     border-bottom: 2px solid rgb(255, 152, 0);
@@ -373,7 +438,6 @@ body {
 .provider__description {
     font-family: TT Norms Pro, sans-serif;
     font-weight: 300;
-    font-size: 18px;
     line-height: 120%;
 }
 
@@ -561,6 +625,7 @@ body {
     height: 674px;
     background-image: url(../src/images/bgimages/forself.webp);
     margin-bottom: 50px;
+    z-index: -1;
 }
 
 .couching__formyself .couching__title {
@@ -836,8 +901,8 @@ body {
 .record__title {
     width: 690px;
     position: absolute;
-    left:996px;
-    bottom: 300px;
+    right: 10%;
+    top: 280px;
 
     color: rgb(0, 0, 0);
     font-family: TT Livret Display Trl;
@@ -848,17 +913,21 @@ body {
     text-align: left;
 }
 
+.record__ilustration {
+    width: 70%;
+}
+
 .record__description {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 100px;
     width: 100%;
 
 
     color: rgb(0, 0, 0);
     font-family: TT Norms;
-    font-size: 18px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0%;
@@ -870,9 +939,8 @@ body {
 }
 
 .provider__recordbtn {
-    margin: 25px 377px;
-    display: flex;
-    justify-content: flex-end;
+    margin-top: 27px;
+    width: 380px;
 }
 
 .provider__startIU {
@@ -880,6 +948,7 @@ body {
     height: 88px;
     margin-left: 216px;
     margin-bottom: 11px;
+    margin-top: 77px;
 }
 
 .provider__calendar {
@@ -945,6 +1014,9 @@ body {
 
 .date__number {
     font-size: 153px;
+}
+.date__number--inactive {
+    opacity: 0.66;
 }
 
 .date__month {
@@ -1041,7 +1113,6 @@ body {
 .day__month {
     color: rgb(0, 0, 0);
     font-family: TT Livret Display Trl;
-    font-size: 18px;
     font-weight: 500;
     line-height: -1px;
     letter-spacing: 0%;
@@ -1080,11 +1151,12 @@ body {
     background-color: rgb(208, 236, 244);
     box-shadow: 0 0 42px rgba(0, 0, 0, 0.25);
 }
-
+.consult__yourresults {
+    font-size: 16px;
+}
 .yourresults__header {
     color: rgb(50, 69, 237);
     font-family: TT Norms;
-    font-size: 16px;
     font-weight: 700;
     line-height: -1px;
     letter-spacing: 2%;
@@ -1095,7 +1167,6 @@ body {
     margin-top: 15px;
     color: rgb(50, 69, 237);
     font-family: TT Norms Pro;
-    font-size: 16px;
     font-weight: 300;
     line-height: 130%;
     letter-spacing: 1%;
@@ -1136,7 +1207,6 @@ body {
     width: 328px; 
     color: black; 
     font-family: TT Livret Display Trl;
-    font-size: 18px;
     font-weight: 500;
     line-height: -1px;
     letter-spacing: 0%;
@@ -1251,7 +1321,6 @@ body {
 }
 .review__name {
     font-family: TT Norms;
-    font-size: 18px;
     font-weight: 700;
     line-height: -1px;
     letter-spacing: 0%;
@@ -1261,7 +1330,6 @@ body {
 
 .review__description {
     font-family: TT Norms Pro;
-    font-size: 18px;
     font-weight: 300;
     line-height: 120%;
     letter-spacing: 0%;
@@ -1284,7 +1352,7 @@ body {
     text-align: left;
     position: absolute;
     top: 150px;
-    left: 1362px;
+    left: 1162px;
     transform: rotate(-90.00deg);
 }
 
@@ -1297,7 +1365,7 @@ body {
     border-radius: 16px;
 }
 
-.patnets__title {
+.partnets__title {
     font-family: TT Livret Trial Roman Variable, sans-serif;
     font-size: 48px;
     font-weight: 300;
@@ -1344,7 +1412,6 @@ body {
     width: 328px; 
     color: black; 
     font-family: TT Livret Display Trl;
-    font-size: 18px;
     font-weight: 500;
     line-height: -1px;
     letter-spacing: 0%;
@@ -1441,12 +1508,10 @@ body {
 
 .useful__gc {
     width: 87px;
-    height: 91px;
 }
 
 .useful__arrow {
     width: 111px;
-    height: 23px;
     display: flex;
     align-items: center;
     margin: 0 26px 0 15px;
@@ -1469,6 +1534,7 @@ body {
 .useful__links {
     margin: 0 75px;
     display: flex;
+    width: 100%;
 }
 
 .useful__link:nth-child(1) {
@@ -1479,12 +1545,11 @@ body {
     box-sizing: border-box;
     padding: 74px 30px 30px 30px;
     background: rgb(224, 233, 239);
-    width: 206px;
+    flex-grow: 1;
     height: 262px;
     margin-left: 33px;
     color: rgb(0, 0, 0);
     font-family: TT Norms;
-    font-size: 18px;
     font-weight: 700;
     line-height: -1px;
     letter-spacing: 0%;
@@ -1495,11 +1560,10 @@ body {
 .footer {
     background-color: rgb(17, 17, 17);
     color: white;
-    padding: 153px 455px 75px 467px;
+    padding: 153px 25% 75px 20%;
     margin: 0 41px 0 41px;
     border-radius: 30px 30px 0 0;
     position: relative;
-    left: 40px;
 }
 
 .footer__container {
@@ -1529,7 +1593,6 @@ body {
 
     color: rgb(255, 255, 255);
     font-family: TT Norms, sans-serif;
-    font-size: 18px;
     font-weight: 400;
     line-height: 30px;
     letter-spacing: 1%;
@@ -1553,7 +1616,7 @@ body {
 }
 
 .footer__copyrigth {
-    width: 345px;
+    width: 40%;
     font-family: TT Livret Trial Roman Variable;
     font-size: 14px;
     font-weight: 300;
@@ -1575,12 +1638,25 @@ body {
     position: absolute;
     right: 218px;
     bottom: 25px;
+    width: 40%;
 }
 
 .footer__bg {
     bottom: 0;
     position: absolute;
     left: 41px;
+}
+
+.header__mobilelogo {
+    display: none;
+}
+
+.mobilelogo__phone {
+    height: 32px;
+}
+.mobilelogo__arrow {
+    height: 24px;
+    margin-left: 20px;
 }
 
 /* OTHER */

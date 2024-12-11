@@ -1,0 +1,327 @@
+
+ /* Adapt font size */
+    /* html, body {
+        font-size: 18px;
+    }
+    .footer__copyrigth, .footer__links{
+        font-size: 14px;
+    }
+    .date__type, .day__duration {
+        font-size: 15px;
+    }
+    .header__black-button, .socials_article, .couching__morebtn, 
+    .course_more, .roadmap__description, .consult__yourresults, .useful__text{
+        font-size: 16px;
+    }
+    .coutching__description, .mailling__dot, .footer__title {
+        font-size: 24px;
+    }
+    .stage__name, .course__name, .date__month, .date__title, .day__number {
+        font-size: 30px;
+    }
+    .consult__comment, .review__number {
+        font-size: 36px;
+    }
+    .header__landcontainer h1, .provider__advantages, .aboutCEO__meet, 
+    .couching__title, .consult_subheader, .partnets__title, .mailling__title {
+        font-size: 48px;
+    }
+    .aboutCEO__name  {
+        font-size: 72px;
+    }
+    .header__landcontainer h2, .couching__reversetext, .roadmap__subheader,
+    .calendar__title, .mailling__bgtext{
+        font-size: 82px;
+    }
+    .provider__title, .provider__title2, .roadmap__header, .record__title {
+        font-size: 100px;
+    }
+    .reviews__header {
+        font-size: 112px;
+    }
+    .couching__number  {
+        font-size: 182px;
+    }
+    .date__number {
+        font-size: 153px;
+    } */
+/* Large desktops and laptops */
+
+@media (max-width: 1790px) {
+    .header {
+        padding-top: 14px;
+        height: 95%;
+    }
+    .programs__item {
+        padding: 15px 0 15px 0;
+    }
+    .licenses__pagin{
+        margin-top: 15px;
+    }
+    .header__contacts {
+        flex-direction: column-reverse;
+    }
+    .header__phonecontainer {
+        margin-top: 15px;
+    }
+
+    .header__landing {
+        margin-top: 0px;
+    }
+
+    .bg__planet img{
+        width: 30%;
+    }
+    .provider__description--one {
+        left: 810px;
+        width: 255px;
+    }
+    .main__rigthline {
+        right: 7%;
+    }
+    .socials_item {
+        width: 36px;
+        height: 36px;
+    }
+    .socials_item img {
+        width: 17px;
+    }
+    .socials_article::after {
+        left: 130px;
+    }
+    .team_slide img{
+        height: 200px;
+    }
+    .provider__team {
+        flex-direction: column;
+        margin-top: 0;
+    }
+    .team_slider {
+        margin-top: 50px;
+    }
+    .couching__formyself {
+        width: 337px;
+        height: 505px;
+    }
+    
+    .couching__forcompany {
+        width: 589px;
+        height: 795px;
+    }
+    .couching__reversetext {
+        position: relative;
+        max-width: 727px;
+        transform: none;
+        top: 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .couching__cotainer {
+        margin-top: 300px;
+    }
+    .couchign__orangerect {
+        width: 400px;
+        top: 80px;
+        left: 50px;
+        z-index: -2;
+    }
+    .roadmap__description {
+    width: 215px;
+    }
+    .provider__hr {
+        margin-top: 300px;
+    }
+    .provider__record {
+        margin-top: 237px;
+    }
+    .record__title {
+        top: 80px;
+    }
+    .record__ilustration {
+        width: 60%;
+    }
+    .record__description {
+        margin-bottom: 70px;
+    }
+    .useful__gc {
+        width: 65px;
+    }
+    .useful__arrow {
+        width: 83px;
+    }
+
+    /* Adapt font size */
+    html, body {
+        font-size: 13.5px;
+    }
+    .footer__copyrigth, .footer__links{
+        font-size: 10.5px;
+    }
+    .date__type, .day__duration {
+        font-size: 11.25px;
+    }
+    .header__black-button, .socials_article, .couching__morebtn, 
+    .course_more, .roadmap__description, .consult__yourresults, .useful__text{
+        font-size: 12px;
+    }
+    .coutching__description, .mailling__dot, .footer__title {
+        font-size: 18px;
+    }
+    .stage__name, .course__name, .date__month, .date__title, .day__number {
+        font-size: 22.5px;
+    }
+    .consult__comment, .review__number {
+        font-size: 27px;
+    }
+    .header__landcontainer h1, .provider__advantages, .aboutCEO__meet, 
+    .couching__title, .consult_subheader, .partnets__title, .mailling__title {
+        font-size: 36px;
+    }
+    .aboutCEO__name  {
+        font-size: 54px;
+    }
+    .header__landcontainer h2, .couching__reversetext, .roadmap__subheader,
+    .calendar__title, .mailling__bgtext{
+        font-size: 61.5px;
+    }
+    .provider__title, .provider__title2, .roadmap__header, .record__title {
+        font-size: 75px;
+    }
+    .reviews__header {
+        font-size: 84px;
+    }
+    .couching__number  {
+        font-size: 136.5px;
+    }
+    .date__number {
+        font-size: 114.75px;
+    }
+    .provider__review:nth-child(3) {
+        grid-column: 1;
+    }
+    .provider__review:nth-child(4) {
+        grid-column: 2;
+    }
+}
+@media (max-width: 1250px) {
+    .header {
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
+
+/* Portrait tablets and medium desktops */
+@media (max-width: 992px) {
+
+    .header__logo, .header__contacts {
+        display: none;
+    }
+
+    .header__mobilelogo {
+        display: flex;
+        align-items: center;
+    }
+    .burger-menu {
+        cursor: pointer;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        right: 20px; /* Расположение справа */
+        top: 20px; /* Расположение сверху */
+        z-index: 1000; /* Чтобы бургер был поверх других элементов */
+    }
+    
+    .bar {
+        height: 2px;
+        width: 70px;
+        background-color: black;
+        margin: 3px 0;
+    }
+    
+    .header__nav {
+        position: fixed;
+        top: 0;
+        right: -250px; /* Скрываем меню изначально */
+        width: 250px; /* Ширина меню */
+        height: 100vh; /* Полная высота экрана */
+        background-color: white;
+        box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+        transition: right 0.3s ease; /* Плавное появление */
+        z-index: 800;
+    }
+    
+    .header__nav.active {
+        right: 0; /* Появление меню при активации */
+    }
+    
+    .nav__list {
+        list-style: none;
+        padding: 20px; /* Отступы для списка */
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .nav__item {
+        margin-bottom: 15px; /* Отступ между элементами */
+    }
+
+    .header__landing {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .programs__item:nth-child(2),  .programs__item:nth-child(3) {
+        display: none;
+    }
+    
+    .bg__planet {
+        margin-top: 300px;
+        margin-left: 10%;
+    }
+    .bg__planet img{
+        width: 100%;
+    }
+    .provider__container {
+        padding: 0;
+        margin: 0;
+    }
+    .provider__title, .provider__title2 {
+        margin: 0;
+        font-size: 52px;
+    }
+    .provider__block {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .advantages__textblocks {
+        flex-direction: column;
+        margin-left: 5%;
+    }
+    .main__provider {
+        margin-left: 5%;
+    }
+    .provider__advantages {
+        margin-left: 5%;
+    }
+    .provider__team {
+        margin-left: 5%;
+    }
+    .main__rigthline {
+        display: none;
+    }
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Landscape phones and smaller */
+@media (max-width: 480px) {
+
+}

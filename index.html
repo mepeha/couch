@@ -2,16 +2,36 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
     <title>Международный Университет коучинга</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/adapt.css">
 </head>
 <body>
     <header class="header">
+        <div class="header__bg">
+            <div class="header__bgimage"> </div>
+            <img class="bg__clo" src="./src/images/effects/glo_coac_1.webp" alt="">
+            <div class="bg__planet">
+                <img src="./src/images/effects/planet.webp"></img>
+            </div>
+            <div class="bg__rigtellipse">
+                <img src="./src/images/effects/yellow_ellipse.webp"></img>
+            </div>
+        </div>
         <div class="header__container">
+            <div class="header__mobilelogo">
+                <img class="mobilelogo__phone" src="./src/icons/phone_icon.webp" alt="">
+                <img class="mobilelogo__arrow" src="./src/icons/arrow_rigth.webp" alt="" srcset="">
+            </div>
             <div class="header__logo">
                 <img src="src/images/logo.webp" alt="Логотип">
             </div>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
             <nav class="header__nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#" class="nav__link">Обучение</a></li>
@@ -95,8 +115,8 @@
             </div>
         </div>
     </header>
-
     <main class="main">
+        <div class="main__rigthline"></div>
         <div class="main__provider">
             <div class="provider__container">
                 <div class="provider__title">
@@ -249,10 +269,10 @@
             <div class="record__description">
                 <p>Хотите познакомиться с коучингом и понять, как он работает, что делает коуч и что чувствует клиент?</p>
                 <p>Запишитесь на бесплатную 30-минутную сессию к профессиональному коучу и попробуйте метод на практике как клиент.</p>
+                <div class="provider__recordbtn">
+                    <button class="header__black-button header__black-button--arrow2">Записаться</button>
+                </div>
             </div>
-        </div>
-        <div class="provider__recordbtn">
-            <button class="header__black-button header__black-button--arrow2">Записаться</button>
         </div>
         <img class="provider__startIU" src="./src/icons/International_university_small_opacity.webp" alt="">
         <div class="provider__calendar">
@@ -278,7 +298,7 @@
                 <div class="calendar__date">
                     <div class="date__container">
                         <div class="date__aboutday">
-                            <div class="date__number">13</div>
+                            <div class="date__number date__number--inactive">13</div>
                             <div class="date__month">марта</div>
                         </div>
                         <div class="date__type">Очный курс</div>
@@ -293,7 +313,7 @@
                 <div class="calendar__date">
                     <div class="date__container">
                         <div class="date__aboutday">
-                            <div class="date__number">27</div>
+                            <div class="date__number date__number--inactive">27</div>
                             <div class="date__month">марта</div>
                         </div>
                         <span class="date__type bg_blue">Онлайн</span>
@@ -336,10 +356,10 @@
         <div class="provider__consult">
             <div class="consult__yourresults">
                 <div class="yourresults__header">
-                    Сертифицирован
+                    Ваши результаты
                 </div>
                 <div class="yourresults__description">
-                    Национальной федерацией профессиональных менторов и коучей
+                    Индивидуальный подход к потребностям вашего бизнеса
                 </div>
             </div>
             <img class="consult_IU" src="./src/images/internationaluniversity_center.webp" alt="">
@@ -399,7 +419,7 @@
             </div>
         </div>
         <div class="provider__partners">
-            <div class="patnets__title"><b><i>Н</i></b>ам доверяют:</div>
+            <div class="partnets__title"><b><i>Н</i></b>ам&nbsp;доверяют:</div>
             <div class="partners__list">
                 <img src="./src/images/partners/pfizer_slider_img.webp" alt="" class="partner">
                 <img src="./src/images/partners/sb_slider_img.webp" alt="" class="partner">
@@ -470,6 +490,8 @@
             <img src="./src/images/footer_ramka2.webp" class="subfooter__bg"></img>
         </div>
         <img src="./src/images/footer_bg.webp" class="footer__bg"></img>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="./src/srcitpts/script.js"></script>
     </footer>
 </body>
 </html>
