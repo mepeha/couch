@@ -321,6 +321,15 @@
 
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
+    .licenses__cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .licenses__card--three {
+        grid-column: span 2;
+        margin-top: 20px;
+        margin-left: 60px;
+    }
 
 }
 
