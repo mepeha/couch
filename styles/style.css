@@ -402,6 +402,7 @@ body {
 
 .main {
     position: relative;
+    overflow-x: hidden;
 }
 
 .main__rigthline {
@@ -1564,6 +1565,7 @@ body {
     margin: 0 41px 0 41px;
     border-radius: 30px 30px 0 0;
     position: relative;
+    overflow-x: hidden;
 }
 
 .footer__container {
