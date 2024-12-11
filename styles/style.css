@@ -1024,6 +1024,7 @@ body {
 
 .date__number {
     font-size: 153px;
+    position: relative;
 }
 .date__number--inactive {
     opacity: 0.66;
