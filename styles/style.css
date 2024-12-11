@@ -541,7 +541,45 @@ body {
     position: relative;
     padding-bottom: 140px;
 }
+.provider__play {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+.provider__play-icon {
+    position: relative;
+}
 
+.provider__play-icon::after, .provider__play-icon::before {
+    content: "";
+    position: absolute;
+    border: 1px solid rgba(255, 255, 255, 0.63);
+    border-radius: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.provider__play-icon::after {
+    width: 500px;
+    height: 500px;
+}
+
+.provider__play-icon::before {
+    width: 800px;
+    height: 800px;
+}
+.provider__play:hover .provider__play-icon::after {
+    width: 600px;
+    height: 600px;
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
+.provider__play:hover .provider__play-icon::before {
+    width: 1000px;
+    height: 1000px;
+    border: 1px solid rgba(255, 255, 255, 0.27);
+}
 .provider__aboutCEO img {
     width: 100%;
 }
