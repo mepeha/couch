@@ -309,6 +309,9 @@
     .main__rigthline {
         display: none;
     }
+    .licenses__pagin {
+        display: none;
+    }
 }
 
 /* Portrait tablets and small desktops */
