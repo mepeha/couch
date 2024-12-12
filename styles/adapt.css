@@ -620,6 +620,81 @@
         margin-bottom: 7px;
 
     }
+    .roadmap__header {
+        padding: 0 3%;
+        font-size: 60px;
+    }
+    .record__description p {
+        width: 90%;
+    }
+    .provider__calendar {
+        margin: 0 3%;
+        border-left: unset;
+        position: relative;
+    }
+    .calendar__title {
+        max-width: 700px;
+        margin-left: 17px;
+        color: rgb(0, 0, 0);
+        font-size: 41px;
+        font-weight: 500;
+        line-height: 42px;
+        letter-spacing: 0%;
+        text-align: left;
+        padding-top: 50px;
+        z-index: 3;
+    }
+    .provider__calendar:before {
+        position: absolute;
+        content: "";
+        top: 170px;
+        left: 10px;
+        height: 55%;
+        width: 2px;
+        background-color: rgb(255, 152, 0);
+    }
+    .calendar__bgtitile {
+        position: absolute;
+        top: 90px;
+        left: -50px;
+        width: 60%;
+        height: 57px;
+        border-radius: 27px;
+        background: rgb(255, 152, 0);
+        z-index: -2;
+    }
+    .calendar__dates {
+        margin-top: 145px;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 70px;
+    }
+    .calendar__date {
+
+       border-left: unset;
+
+    }
+    .date__container {
+        display: flex;
+        justify-content: unset;
+        gap: 66px;
+    }
+    .date__info {
+        margin-top: 41px;
+    }
+    .calendar__days {
+        margin-top: 82px;
+        margin-left: 10px;
+        margin-right: 54px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        row-gap: 20px;
+    }
+    .day__card {
+        width: 81px;
+        height: 129px;
+    }
 }
 
 /* Portrait tablets and small desktops */
