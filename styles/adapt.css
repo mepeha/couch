@@ -255,6 +255,7 @@
         box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
         transition: right 0.3s ease; /* Плавное появление */
         z-index: 800;
+        padding-top: 50px;
     }
     
     .header__nav.active {
@@ -745,6 +746,64 @@
     .day__card {
         width: 81px;
         height: 129px;
+    }
+
+    .footer {
+        padding: 53px 30px;
+        margin: inherit;
+        position: relative;
+    }
+
+    .footer__contacts {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        justify-content: space-between;
+        margin-top: 87px;
+        padding: 41px 0 45px 0;
+        border-top: unset;
+        border-bottom: unset;
+    }
+
+    .footer__title {
+        display: inline;
+    }
+
+    .footer__subfooter {
+        margin-top: unset;
+    }
+    .contact__phone {
+        position: relative;
+    }
+    .contact__phone::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 50px;
+        background: rgb(255, 152, 0);
+    }
+
+    .contact__email::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 2px;
+        margin-bottom: 50px;
+        background: rgb(255, 152, 0);
+    }
+
+    .footer__subfooter {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .footer__copyrigth {
+        margin-top: 15px;
+        width: 100%;
+    }
+    .footer__links {
+        margin-left: auto;
     }
 }
 
