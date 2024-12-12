@@ -276,7 +276,14 @@
     .programs__item:nth-child(2),  .programs__item:nth-child(3) {
         display: none;
     }
-    
+    .programs__item {
+        border-bottom: 0;
+    }
+    .header_bgprogram {
+        width: 200px;
+        height: 35px;
+        top: 20px;
+    }    
     .bg__planet {
         margin-top: 300px;
         margin-left: 10%;
@@ -299,9 +306,14 @@
     .advantages__textblocks {
         flex-direction: column;
         margin-left: 5%;
+        margin-top: 35px;
+    }
+    .advantages__textblock {
+        height: 109px;
     }
     .main__provider {
         margin-left: 5%;
+        margin-top: 35px;
     }
     .provider__advantages {
         margin-left: 5%;
@@ -354,11 +366,17 @@
     .provider__description--two{
         margin-top: 25px;
     }
+    .provider__description--three {
+        margin: 18px 50px 110px;
+    }
     .provider__container, .main__provider {
         border: none;
     }
     .team_slide img {
         margin-right: 10px;
+    }
+    .header__landcontainer {
+        margin-left: 20px;
     }
     .header__landcontainer h1 {
         font-size: 26px;
@@ -366,6 +384,9 @@
     }
     .header__landcontainer h2 {
         margin-top: 20px;
+    }
+    .header__landcontainer .header__black-button {
+        margin-top: 40px;
     }
     .advantages__blacktextbg {
         height: 25px;
@@ -383,6 +404,17 @@
         height: 175px;
         border-radius: 100%;
         border: 1px solid rgb(255, 152, 0); 
+    }
+    .programs__list {
+        line-height: 18px;
+        width: 70px;
+    }
+    
+    .header__programs {
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+        margin: 0;
     }
 }
 
