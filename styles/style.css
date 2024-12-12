@@ -942,6 +942,7 @@ body {
     left: -50px;
     top: 200px;
     transform: translate(-50%,-50%);
+    z-index: -5;
 }
 .roadmap__stages:after {
     content: url("../src/images/effects/text-bg-map-road.webp");
@@ -951,6 +952,7 @@ body {
     width: 140%;
     height: 100%;
     opacity: 0.4;
+    z-index: -5;
 }
 .roadmap__stage {
     width: 100%;
@@ -1053,6 +1055,7 @@ body {
 .roadmap_bg {
     position: absolute;
     left: 40%;
+    z-index: -5;
 }
 
 .provider__record {
