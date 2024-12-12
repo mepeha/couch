@@ -757,6 +757,13 @@ body {
     width: 450px;
     height: 674px;
     background-image: url(../src/images/bgimages/forself.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin-bottom: 50px;
     z-index: -1;
 }
