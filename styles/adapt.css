@@ -760,10 +760,11 @@
         flex-direction: column;
         gap: 40px;
         justify-content: space-between;
-        margin-top: 87px;
+        margin-top: 47px;
         padding: 41px 0 45px 0;
         border-top: unset;
         border-bottom: unset;
+        font-size: 18px;
     }
 
     .footer__title {
@@ -805,6 +806,14 @@
     }
     .footer__links {
         margin-left: auto;
+    }
+
+    .footer__copyrigth, .footer__links {
+        font-size: 13px;
+    }
+
+    .subfooter__bg {
+        d
     }
 
     .provider__consult {
