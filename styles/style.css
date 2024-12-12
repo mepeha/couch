@@ -1458,12 +1458,10 @@ body {
     gap: 32px;
     position: relative;
 }
-.provider__reviews::after {
-    content: url(../src/images/effects/rewiew-pagination.webp);
-    position: absolute;
-    right: 30%;
-    bottom: -60px;
-    z-index: -5;
+.review__img {
+    margin: 30px auto;
+    display: flex;
+    justify-content: center;
 }
 .provider__review:nth-child(1) {
     position: relative;
