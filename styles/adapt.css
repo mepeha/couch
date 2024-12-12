@@ -506,6 +506,9 @@
         text-align: left;
         margin-left: 10%;
     }
+    .provider__couching {
+        margin-top: 50px;
+    }
 }
 
 /* Portrait tablets and small desktops */
