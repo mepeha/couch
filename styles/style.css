@@ -41,6 +41,7 @@ body {
     padding: 0;
     overflow-x: hidden;
     position: relative;
+    font-size: 18px;
 }
 
 .header {
@@ -1617,7 +1618,7 @@ body {
 }
 
 .footer__container {
-
+    position: relative; 
 }
 
 .footer__title {
