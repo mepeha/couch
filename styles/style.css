@@ -1506,6 +1506,10 @@ body {
     border-radius: 16px;
 }
 
+.partner {
+    mix-blend-mode: multiply;
+}
+
 .partnets__title {
     font-family: TT Livret Trial Roman Variable, sans-serif;
     font-size: 48px;
