@@ -813,7 +813,18 @@
     }
 
     .subfooter__bg {
-        d
+        position: absolute;
+        transform: rotate(-70deg);
+        left: 20%;
+        bottom: 600px;
+        width: 600px;
+    }
+
+    .footer__bg {
+        left: 41px;
+        width: 700px;
+        transform: rotate(-45deg);
+        bottom: 500px;
     }
 
     .provider__consult {
