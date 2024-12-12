@@ -940,6 +940,62 @@
         left: 0;
         top: 20px;
     }
+
+
+    .mailling__dots {
+        flex-direction: column;
+        gap: 70px;
+    }
+    .mailling__dot {
+        position: relative;
+    }
+    .mailling__dot:nth-child(2) {
+        left: 40px;
+    }
+    .mailling__dot:nth-child(3) {
+        left: 50px;
+    }
+    .mailling__arrow {
+        width: 52px;
+        height: 23px;
+        margin-top: unset;
+        margin-left: unset;
+        position: absolute;
+        bottom: 500px;
+        right: 0;
+        transform: rotate(91deg);
+    }
+    .mailling__bgtext {
+        font-size: 52px;
+        font-weight: 700;
+        opacity: 0.3;
+    }
+    .mailling__container {
+        flex-direction: column;
+    }
+    .mailling__form {
+        margin-top: 83px;
+        margin-left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .mailling__form input[type="text"] {
+        width: 100%;
+    }
+    .provider__mailing {
+        margin: 57px 50px 0 8%;
+        padding-bottom: 90px;
+        position: relative;
+    }
+    .mailling__btn {
+        display: block;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+    .mailling_manimg {
+        margin: 30px auto;
+    }
 }
 
 /* Portrait tablets and small desktops */
