@@ -926,8 +926,25 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 100px;
-}
+    position: relative;
 
+}
+.roadmap__stages:before {
+    content: url("../src/images/effects/blue_spot.webp");
+    position: absolute;
+    left: -50px;
+    top: 200px;
+    transform: translate(-50%,-50%);
+}
+.roadmap__stages:after {
+    content: url("../src/images/effects/text-bg-map-road.webp");
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 140%;
+    height: 100%;
+    opacity: 0.4;
+}
 .roadmap__stage {
     width: 100%;
     border-bottom: 2px solid rgb(255, 152, 0);
@@ -1097,6 +1114,32 @@ body {
     border-left: 2px solid rgb(255, 152, 0);
     padding-bottom: 87px;
 }
+.provider__calendar::after {
+    content: url(../src/images/effects/arrow-line-right-yellow.webp);
+    position: absolute;
+    right: -50px;
+    bottom: 100px;
+    z-index: -5;
+    opacity: 0.8;
+}
+.provider__consult::after {
+    content: url(../src/images/effects/dark-light-right.webp);
+    position: absolute;
+    right: -20px;
+    top: 0;
+    transform: translate(0, -50%);
+    z-index: -5;
+    opacity: 0.8;
+}
+.provider__consult::before {
+    content: url(../src/images/effects/glocoa.webp);
+    position: absolute;
+    right: -20px;
+    top: 50px;
+
+    z-index: -5;
+    opacity: 0.1;
+}
 
 .calendar__title {
     max-width: 700px;
@@ -1261,8 +1304,9 @@ body {
 }
 
 .provider__consult {
+    margin: 0 20px;
     padding: 31px 13% 0 13%;
-    background-image: url("../src/images/bgimages/background2.webp");
+    background-image: url("../src/images/bgimages/need-help.webp");
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -1271,6 +1315,7 @@ body {
     background-size: cover;
     min-height: 100vh;
     position: relative;
+    border-radius: 30px;
 }
 
 .consult_IU {
@@ -1401,8 +1446,15 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 32px;
+    position: relative;
 }
-
+.provider__reviews::after {
+    content: url(../src/images/effects/rewiew-pagination.webp);
+    position: absolute;
+    right: 30%;
+    bottom: -60px;
+    z-index: -5;
+}
 .provider__review:nth-child(1) {
     position: relative;
     bottom: 150px;
@@ -1482,7 +1534,22 @@ body {
 .review__container {
     position: relative;
 }
-
+.review__container::after {
+    content: url(../src/images/effects/blue-left-light.webp);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    opacity: 0.4;
+}
+.review__container::before {
+    content: url(../src/images/effects/mini-blue-light-right.webp);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    opacity: 0.4;
+}
 .reviews__header {
     color: rgb(239, 210, 164);
     font-family: TT Livret Display Trl;
@@ -1504,12 +1571,27 @@ body {
     box-sizing: border-box;
     border: 2px solid rgb(186, 190, 190);
     border-radius: 16px;
+    position: relative;
 }
-
+.provider__partners::after {
+    content: url(../src/images/effects/arrow-line-right-blue.webp);
+    position: absolute;
+    right: 15%;
+    top: 100px;
+    z-index: -5;
+    opacity: 0.8;
+}
 .partner {
     mix-blend-mode: multiply;
 }
-
+.provider__partners::before {
+    content: url(../src/images/effects/orangle-light-left.webp);
+    position: absolute;
+    left: -30px;
+    top: 100px;
+    z-index: -5;
+    opacity: 0.8;
+}
 .partnets__title {
     font-family: TT Livret Trial Roman Variable, sans-serif;
     font-size: 48px;
