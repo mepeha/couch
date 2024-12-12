@@ -560,7 +560,66 @@
         left: 0;
         top: 0;
     }
+    .roadmap__stage {
+        flex-direction: column;
+    }
+    .stage__level {
+        margin-bottom: 30px;
+        margin-left: 11%;
 
+    }
+    .stage__name {
+        position: relative;
+        top: -100%;
+    }
+    .stage__leftcontainer {
+        width: 100%;
+    }
+    .stage__courses {
+        margin-left: 30px;
+    }
+    .roadmap__description {
+        margin-left: 30px;
+    }
+    .roadmap_bg {
+
+        left: 13px;
+        right: 13px;
+
+    }
+    .provider__record {
+        margin-top: 150px;
+        flex-direction: column;
+        position: relative;
+    }
+    .record__ilustration {
+        width: 100%;
+        margin-left: 32px;
+    }
+    .record__title {
+        font-size: 51px;
+        max-width: 100%;
+        margin-left: 31px;
+        top: -120px;
+        right: unset;
+    }
+    .record__description {
+        margin-left: 30px;
+    }
+    .provider__record:before {
+        position: absolute;
+        content: "";
+        left: 15px;
+        height: 75%;
+        width: 1px;
+        background-color: rgb(255, 152, 0);
+    }
+    .provider__startIU {
+
+        margin-left: 157px;
+        margin-bottom: 7px;
+
+    }
 }
 
 /* Portrait tablets and small desktops */
