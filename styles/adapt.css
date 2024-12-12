@@ -492,11 +492,19 @@
     .aboutCEO__telegram {
         left: 0;
         bottom: 0;
-        width: 90%;
+        width: 387px;
     }
     .aboutCEO__tglink-btn {
-        bottom: 100px;
+        bottom: 90px;
         right: 0;
+    }
+    .couching__reversetext {
+        font-size: 42px;
+        line-height: 52px;
+        display: inline-block;
+        font-weight: bold;
+        text-align: left;
+        margin-left: 10%;
     }
 }
 
