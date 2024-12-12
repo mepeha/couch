@@ -32,6 +32,7 @@
 html, body {
     width: 100%;
     height: 100%;
+    font-size: 18px !important;
 }
 
 body {
@@ -41,7 +42,6 @@ body {
     padding: 0;
     overflow-x: hidden;
     position: relative;
-    font-size: 18px;
 }
 
 .header {
@@ -542,6 +542,7 @@ body {
     position: relative;
     padding-bottom: 140px;
 }
+
 .provider__play {
     position: absolute;
     top: 30%;
@@ -585,9 +586,13 @@ body {
     width: 100%;
 }
 
-.aboutCEO__text {
+.aboutCEO__mb-bg {
+    display: none;
+}
+
+.aboutCEO__container {
     position: absolute;
-    top: 241px;
+    top: 20%;
     left: 12%;
 }
 
@@ -607,7 +612,18 @@ body {
     width: 474px;
 }
 
-.aboutCEO__telgram {
+.aboutCEO__logo {
+    display: none;
+    width: 100%;
+    margin-top: 75px;
+}
+
+.aboutCEO__logo img {
+    margin-left: 10%;
+    width: 200px;
+}
+
+.aboutCEO__telegram {
     position: absolute;
     bottom: 0;
     left: 40%;
@@ -616,9 +632,56 @@ body {
     z-index: 1;
 }
 
+.aboutCEO__tglink {
+    text-decoration: none;
+}
+
+.aboutCEO__tglink-btn {
+    position: absolute;
+    bottom: 11%;
+    right: -100px;
+}
+
+.aboutCEO__tglink-btn .header__black-button {
+    display: inline-block;
+    font-size: 19px;
+    font-weight: 300;
+    line-height: 23px;
+    min-height: 61px;
+    min-width: 256px;
+    border-radius: 30.5px;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    20% {
+        transform: translateX(10px);
+    }
+    40% {
+        transform: translateX(-10px);
+    }
+    60% {
+        transform: translateX(5px);
+    }
+    80% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.aboutCEO__tglink-btn .header__black-button:hover {
+    background-color: rgb(15, 15, 15);
+    opacity: 1;
+    animation: shake 1s ease-in-out;
+}
+
 .aboutCEO__line {
     position: absolute;
-    bottom: 150px;
+    bottom: 76px;
     right: 0;
     width: 50%;
     height: 2px;
@@ -630,7 +693,7 @@ body {
 .provider__couching {
     display: flex;
     height: 1025px;
-    margin-top: 30px;
+    margin-top: 142px;
     position: relative;
 }
 
