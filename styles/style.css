@@ -1534,7 +1534,22 @@ body {
 .review__container {
     position: relative;
 }
-
+.review__container::after {
+    content: url(../src/images/effects/blue-left-light.webp);
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -5;
+    opacity: 0.4;
+}
+.review__container::before {
+    content: url(../src/images/effects/mini-blue-light-right.webp);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -5;
+    opacity: 0.4;
+}
 .reviews__header {
     color: rgb(239, 210, 164);
     font-family: TT Livret Display Trl;
@@ -1567,7 +1582,14 @@ body {
     z-index: -5;
     opacity: 0.8;
 }
-
+.provider__partners::before {
+    content: url(../src/images/effects/orangle-light-left.webp);
+    position: absolute;
+    left: -30px;
+    top: 100px;
+    z-index: -5;
+    opacity: 0.8;
+}
 .partnets__title {
     font-family: TT Livret Trial Roman Variable, sans-serif;
     font-size: 48px;
