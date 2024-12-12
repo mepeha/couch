@@ -428,9 +428,23 @@ body {
     position: relative;
 }
 .provider__container {
+    position: relative;
     margin-left: 20%;
     padding: 140px 0 88px 112px;
     border-left:  2px solid rgb(255, 152, 0);
+}
+.provider__container:first-child:before {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    content: url("../src/images/effects/circle-two.webp");
+    bottom: -60px;
+    left: -21px;
+}
+.provider__container:first-child:after {
+    position: absolute;
+    content: url("../src/images/effects/arrow-down-citrcle-top.webp");
+    bottom: 50px;
+    right: 300px;
 }
 
 .provider__title, .provider__title2 {
