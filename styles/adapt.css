@@ -457,6 +457,7 @@
     .provider__play {
         top: 40%;
         left: 45%;
+        z-index: 100;
     }
 
     .provider__play-icon  img{
@@ -507,7 +508,21 @@
         margin-left: 10%;
     }
     .provider__couching {
+        display: flex;
+        flex-direction: column;
         margin-top: 50px;
+    }
+    .couching__cotainer {
+        position:relative;
+        left: 0;
+        margin-top: 50px;
+        margin-left: 10%;
+    }
+    .couching__forcompany {
+        position: relative;
+        width: 100%;
+        height: 500px;
+        
     }
 }
 

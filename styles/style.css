@@ -728,7 +728,14 @@ body {
 }
 
 .couching__cotainer {
-    position: relative;
+    position: absolute;
+}
+
+.couching__cotainer:nth-child(2) {
+    right: 715px;
+}
+.couching__cotainer:nth-child(3) {
+    right: 700px;
 }
 
 .couching__formyself {
@@ -761,6 +768,13 @@ body {
     width: 785px;
     height: 1060px;
     background-image: url(../src/images/bgimages/forcompany.webp);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     margin-bottom: 50px;
     transform: translateX(-68px);
     z-index: -1;
