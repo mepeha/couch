@@ -753,12 +753,13 @@
         padding: 53px 30px;
         margin: inherit;
         position: relative;
+        border-radius: unsetв пр;
     }
 
     .footer__contacts {
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 30px;
         justify-content: space-between;
         margin-top: 47px;
         padding: 41px 0 45px 0;
@@ -996,7 +997,7 @@
     }
     .provider__mailing {
         margin: 57px 50px 0 8%;
-        padding-bottom: 90px;
+        padding-bottom: 0;
         position: relative;
     }
     .mailling__btn {
@@ -1006,6 +1007,54 @@
     }
     .mailling_manimg {
         margin: 30px auto;
+    }
+    .useful__links {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 100%;
+        gap: 5%;
+        margin: 0 0 40px 0;
+    }
+    
+    .useful__link {
+        width: 30%;
+        height: 125px;
+        flex-grow: unset;
+        font-size: 12px;
+        padding: 10% 0 0 5%;
+        margin: 0 0 5% 0;
+    }
+
+    .useful__container {
+        margin: 0 0 20px 7%;
+    }
+
+    .provider__useful {
+        flex-direction: column;
+    }
+    .provider__partners {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border: unset; 
+        border-radius: unset;
+        position: relative;
+    }
+
+    .partners__list {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        margin: 20px 5% 0 5%;
+    }
+
+    .partners__list img {
+        height: 60px;
+    }
+
+    .partnets__title {
+        font-size: 43px;
+        text-align: center;
     }
 }
 
