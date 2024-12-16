@@ -46,8 +46,21 @@
         font-size: 153px;
     } */
 /* Large desktops and laptops */
-
+ @media (min-width: 1940px) {
+     .reviews__header {
+         left: 1300px;
+     }
+ }
 @media (max-width: 1790px) {
+    .provider__couching::before {
+        content: "";
+        position: absolute;
+        top: -15%;
+        left: 65%;
+        height: 278px;
+        width: 1px;
+        background: #FF9800;
+    }
     .header {
         padding-top: 14px;
         height: 95%;

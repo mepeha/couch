@@ -33,11 +33,11 @@ html, body {
     width: 100%;
     height: 100%;
     font-size: 18px;
+    background: rgba(243, 251, 254, 0.60);
 }
 
 body {
     font-family: TT Norms Pro, sans-serif;
-    background-color: rgba(243, 243, 243, 0.6);
     margin: 0;
     padding: 0;
     overflow-x: hidden;
@@ -47,8 +47,9 @@ body {
 .header {
     padding: 31px 13% 0 13%;
     position: relative;
-    overflow: hidden;
     height: 877px;
+    overflow: hidden;
+
 }
 
 .header__bg {
@@ -57,7 +58,7 @@ body {
     top: 0;
     position: absolute;
     width: 100%;
-    height: 1224px;
+    height: 100%;
     z-index: -1;
 }
 
@@ -85,10 +86,10 @@ body {
 
 .bg__clo {
     position: absolute;
-    top: 90px;
+    top: -8%;
     right: 0;
-    opacity: 0.8;
-    mix-blend-mode: overlay; 
+    opacity: 0.1;
+    /*mix-blend-mode: overlay;*/
 }
 
 .bg__rigtellipse {
@@ -407,7 +408,7 @@ body {
 
 .main {
     position: relative;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .main__rigthline {
@@ -711,6 +712,15 @@ body {
     position: relative;
 }
 
+.provider__couching::before {
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: 65%;
+    height: 278px;
+    width: 1px;
+    background: #FF9800;
+}
 .couching__reversetext {
     position: absolute;
     max-width: 727px;
@@ -748,6 +758,7 @@ body {
 .couching__cotainer:nth-child(2) {
     right: 715px;
 }
+
 .couching__cotainer:nth-child(3) {
     right: 700px;
 }
@@ -948,7 +959,7 @@ body {
     content: url("../src/images/effects/text-bg-map-road.webp");
     position: absolute;
     left: 0;
-    top: 0;
+    top: 25%;
     width: 140%;
     height: 100%;
     opacity: 0.4;
@@ -1091,14 +1102,19 @@ body {
     flex-direction: column;
     margin-bottom: 100px;
     width: 100%;
-
-
+    position: relative;
     color: rgb(0, 0, 0);
     font-family: TT Norms;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0%;
     text-align: left;
+}
+.record__description::before {
+    content: url("/src/icons/International_university_small_opacity.webp");
+    position: absolute;
+    right: 190px;
+    top: 15%;
 }
 
 .record__description p {
@@ -1108,8 +1124,17 @@ body {
 .provider__recordbtn {
     margin-top: 27px;
     width: 380px;
+    position: relative;
 }
-
+.provider__recordbtn::before {
+    content: "";
+    position: absolute;
+    left: -60%;
+    top: 0;
+    width: 150px;
+    height: 2px;
+    background: #FF9800;
+}
 .provider__startIU {
     width: 88px;
     height: 88px;
@@ -1316,7 +1341,8 @@ body {
 .provider__consult {
     margin: 0 20px;
     padding: 31px 13% 0 13%;
-    background-image: url("../src/images/bgimages/need-help.webp");
+
+    background-image: url("../src/images/bgimages/need-help-white2.webp");
     background-repeat: no-repeat;
     background-position: center center;
     -webkit-background-size: cover;
@@ -1330,7 +1356,7 @@ body {
 
 .consult_IU {
     display: block;
-    margin: auto;
+    margin: 0 auto 120px;
 }
 
 .consult__yourresults {
@@ -1458,6 +1484,24 @@ body {
     gap: 32px;
     position: relative;
 }
+.provider__reviews::after {
+    position: absolute;
+    content: "";
+    left: 250px;
+    width: 1px;
+    height: 79%;
+    z-index: -1;
+    background: #FF9800;
+}
+.provider__reviews::before {
+    position: absolute;
+    content: "";
+    left: 250px;
+    top: 79%;
+    width: calc(100%);
+    height: 1px;
+    background: #FF9800;
+}
 .review__img {
     margin: 30px auto;
     display: flex;
@@ -1584,8 +1628,8 @@ body {
 .provider__partners::after {
     content: url(../src/images/effects/arrow-line-right-blue.webp);
     position: absolute;
-    right: 15%;
-    top: 100px;
+    right: 25%;
+    top: 39%;
     z-index: -5;
     opacity: 0.8;
 }
@@ -1624,7 +1668,26 @@ body {
     padding-bottom: 90px;
     position: relative;
 }
-
+.provider__mailing::before {
+    content: url("/src/images/effects/glocoa.webp");
+    position: absolute;
+    top: 0;
+    left: 5%;
+    background-blend-mode: overlay;
+    opacity: 0.05;
+}
+.provider__mailing::after {
+    content: "Индивидуальный подход к потребностям вашего бизнеса";
+    color: rgba(69, 72, 244, 0.39);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    position: absolute;
+    top: -80px;
+    right: 15%;
+    width: 120px;
+}
 .mailling__title {
     font-family: TT Livret Trial Roman Variable, sans-serif;
     font-size: 48px;
