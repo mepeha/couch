@@ -25,6 +25,14 @@
     font-style:normal;
 }
 
+@font-face {
+    font-family: "TT Livret Trial Roman Variable";
+    src: url("../src/fonts/TT Livret Display Trial Italic.woff2") format("woff2"),
+    url("../src/fonts/TT Livret Display Trial Italic.woff") format("woff");
+    font-weight: normal;
+    font-style: italic;
+}
+
 @function rem($pixels) {
 	@return calc($pixels / 10) + rem;
 }
@@ -51,7 +59,10 @@ body {
     overflow: hidden;
 
 }
-
+i {
+    font-family: "TT Livret Trial Roman Variable";
+    font-style: italic;
+}
 .header__bg {
     background-color: rgba(243, 243, 243, 0.6);
     left: 0;
