@@ -86,7 +86,7 @@ body {
 
 .bg__clo {
     position: absolute;
-    top: -8%;
+    top: 120px;
     right: 0;
     opacity: 0.1;
     /*mix-blend-mode: overlay;*/
@@ -1340,7 +1340,7 @@ body {
 
 .provider__consult {
     margin: 0 20px;
-    padding: 31px 13% 0 13%;
+    padding: 50px 13% 0 13%;
 
     background-image: url("../src/images/bgimages/need-help-white2.webp");
     background-repeat: no-repeat;
@@ -1355,8 +1355,10 @@ body {
 }
 
 .consult_IU {
-    display: block;
-    margin: 0 auto 120px;
+    position: absolute;
+    top: 10px;
+    transform: translate(-50%);
+    left: 50%;
 }
 
 .consult__yourresults {
