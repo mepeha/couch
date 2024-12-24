@@ -1892,7 +1892,8 @@ i {
 }
 
 .footer__container {
-    position: relative; 
+    position: relative;
+    z-index: 2;
 }
 
 .footer__title {
@@ -1933,6 +1934,8 @@ i {
 
 .footer__subfooter {
     margin-top: 310px;
+    position: relative;
+    z-index: 2;
 }
 
 .footer__subfooter {
