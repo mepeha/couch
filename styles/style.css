@@ -958,6 +958,17 @@ i {
     position: relative;
 
 }
+.roadmap_bg::before {
+    content: "";
+    position: absolute;
+    width: 96px;
+    height: 96px;
+    border-radius: 100%;
+    background-color: #E2E8EA;
+    top: -48px;
+    left: 40%;
+    transform: translate(-50%);
+}
 .roadmap__stages:before {
     content: url("../src/images/effects/blue_spot.webp");
     position: absolute;
@@ -973,7 +984,7 @@ i {
     top: 25%;
     width: 140%;
     height: 100%;
-    opacity: 0.4;
+    opacity: 0.6;
     z-index: -5;
 }
 .roadmap__stage {
@@ -1079,7 +1090,9 @@ i {
     left: 40%;
     z-index: -5;
 }
+.roadmap_bg span {
 
+}
 .provider__record {
     margin-top: 113px;
     display: flex;
