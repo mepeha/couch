@@ -1701,6 +1701,7 @@ i {
     left: 5%;
     background-blend-mode: overlay;
     opacity: 0.05;
+    z-index: -1;
 }
 .provider__mailing::after {
     content: "Индивидуальный подход к потребностям вашего бизнеса";
@@ -1721,7 +1722,18 @@ i {
     line-height: 120%;
     letter-spacing: 0%;
 }
+@keyframes levitate {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
 
+.levitating {
+    animation: levitate 2s ease-in-out infinite;
+}
 .mailling__form input[type="text"] {
     margin: 5px 0;
     padding-bottom: 5px;
@@ -1737,6 +1749,7 @@ i {
     color: black; 
     font-family: TT Livret Display Trl;
     font-weight: 500;
+    font-size: 20px;
     line-height: -1px;
     letter-spacing: 0%;
     text-align: left;
@@ -1816,7 +1829,7 @@ i {
 .mailling__bgtext {
     position: absolute;
     top: 150px;
-    color: rgba(0, 0, 0, 0.09);
+    color: rgba(0, 0, 0, 0.05);
     font-family: TT Livret Display Trl;
     font-size: 82px;
     font-weight: 500;
@@ -1877,8 +1890,12 @@ i {
     font-weight: 700;
     line-height: -1px;
     letter-spacing: 0%;
+    transition: all 0.3s ease-in-out;
 }
-
+.useful__link:hover {
+    background: black;
+    color: white;
+}
 /* FOOTER */
 
 .footer {
@@ -1914,8 +1931,8 @@ i {
     justify-content: space-between;
     margin-top: 87px;
     padding: 41px 0 45px 0;
-    border-top: 2px solid rgb(255, 152, 0);
-    border-bottom: 2px solid rgb(255, 152, 0);
+    border-top: 1px solid rgb(255, 152, 0);
+    border-bottom: 1px solid rgb(255, 152, 0);
 
     color: rgb(255, 255, 255);
     font-family: TT Norms, sans-serif;
@@ -1964,7 +1981,7 @@ i {
 
 .subfooter__bg {
     position: absolute;
-    right: 218px;
+    right: -88px;
     bottom: 25px;
     width: 40%;
 }
